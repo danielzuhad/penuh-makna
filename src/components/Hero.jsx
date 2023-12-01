@@ -1,14 +1,17 @@
 import React from "react";
+
 import Button from "./Button";
-import Image from "next/image";
 import ImageComp from "./Image";
+import SquareProp from "./SquareProp";
+import coffeeHome from "../../public/images/coffee-home.png";
 
 const Hero = ({ theme }) => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row xl:justify-between w-full max-h-screen mt-[85px] md:mt-[158px] gap-[88px]">
+      <div className="flex flex-col lg:flex-row lg:justify-between items-center h-screen lg:h-max mt-[120px] md:mt-[158px] gap-[88px] ">
         {/* Quote */}
-        <div className="flex flex-col items-center justify-center lg:items-start gap-[28px] md:gap-[35px]  w-full">
+
+        <div className="flex flex-col items-center justify-center lg:items-start gap-[28px] md:gap-[35px]  w-full ">
           <h1 className="font-bold text-[32px] sm:text-[50px] lg:text-[3.5vw] text-primary-content  text-center lg:text-start">
             Racik Kopimu, <br />
             Ciptakan Pengalamanmu.
@@ -25,8 +28,9 @@ const Hero = ({ theme }) => {
         </div>
 
         {/* Image */}
-        <div className="w-full flex justify-center lg:justify-end">
-          <ImageComp />
+        <div className="w-full  flex justify-center relative items-center lg:justify-end sm:max-lg:mt-16">
+          <SquareProp theme={theme} />
+          <ImageComp src={coffeeHome} />
         </div>
       </div>
     </>

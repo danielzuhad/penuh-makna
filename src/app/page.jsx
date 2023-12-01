@@ -6,11 +6,11 @@ export default function Home() {
   return (
     <>
       <container
-        className={`min-h-screen flex justify-center ${
+        className={`min-h-screen w-screen flex justify-center ${
           theme === "light" ? `bg-[#FFFBFF]` : `bg-[#201A18]`
         }`}
       >
-        <main className=" w-[90vw] sm:w-[80vw]">
+        <main className=" w-[90vw] sm:w-[80vw] ">
           <Hero theme={theme} />
         </main>
       </container>

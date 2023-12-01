@@ -1,14 +1,18 @@
 import React from "react";
 import Image from "next/image";
+import { twMerge } from "tailwind-merge";
 
-const ImageComp = ({ src }) => {
+const ImageComp = ({ src, className }) => {
   return (
     <>
       <Image
-        width={300}
-        height={300}
+        width={500}
+        height={500}
         src={src}
-        className="bg-black object-cover w-[50vw] sm:w-[40vw] lg:w-[30vw]   md:rounded-[90px] xl:rounded-[100px] rounded-[60px] 2xl:rounded-[150px]"
+        className={twMerge(
+          " object-cover w-[50vw] h-[50vw] md:w-[45vw] md:h-[45vw]  lg:w-[90%] lg:h-auto rounded-[7vw] lg:rounded-[5vw]  z-0",
+          className
+        )}
         alt=""
       />
     </>
