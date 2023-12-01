@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   let theme = "light";
@@ -10,14 +11,7 @@ export default function Home() {
         }`}
       >
         <main className=" w-[90vw] sm:w-[80vw]">
-          {/* Coba theme boleh dihapus */}
-          <Button variant="primary" theme={theme}>
-            primary
-          </Button>
-
-          <Button variant="secondary" className="py-10" theme={theme}>
-            secondary
-          </Button>
+          <Hero theme={theme} />
         </main>
       </container>
     </>
