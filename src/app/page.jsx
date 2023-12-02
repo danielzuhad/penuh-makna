@@ -1,5 +1,7 @@
+import About from "@/components/About";
 import Button from "@/components/Button";
 import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   let theme = "light";
@@ -10,8 +12,10 @@ export default function Home() {
           theme === "light" ? `bg-[#FFFBFF]` : `bg-[#201A18]`
         }`}
       >
-        <main className=" w-[90vw] sm:w-[80vw] ">
+        <main className=" flex flex-col items-center">
+          <Navbar />
           <Hero theme={theme} />
+          <About theme={theme} />
         </main>
       </container>
     </>

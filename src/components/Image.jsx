@@ -10,7 +10,7 @@ const ImageComp = ({ src, className }) => {
         height={500}
         src={src}
         className={twMerge(
-          " object-cover w-[50vw] h-[50vw] md:w-[45vw] md:h-[45vw]  lg:w-[90%] lg:h-auto rounded-[7vw] lg:rounded-[5vw]  z-0",
+          " object-cover aspect-square w-[50vw]  md:w-[40vw] md:h-[40vw] lg:w-[90%] xl:w-[80%] 2xl:w-[70%] lg:h-auto rounded-[7vw] lg:rounded-[5vw]  z-10",
           className
         )}
         alt=""

@@ -3,7 +3,7 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 
 const buttonVariants = cva(
-  "max-w-max  lg:text-[1vw] text-sm btn px-5 rounded-[10px] shadow-sm border border-black text-center font-normal xl:btn-lg lg:h-[3em]  lg:px-[1.5vw]",
+  "max-w-max  lg:text-[1vw] text-sm btn px-5 rounded-[10px] shadow-sm border border-black text-center font-normal 2xl:btn-lg  lg:px-[1.5vw]",
   {
     variants: {
       variant: {

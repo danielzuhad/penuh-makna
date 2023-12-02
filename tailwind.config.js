@@ -15,12 +15,12 @@ module.exports = {
           "primary-content": "#FFFFFF",
           secondary: "#FFB950",
           "secondary-content": "#FFFFFF",
-          "base-100": "#FFFBFF",
         },
         dark: {
           primary: "#FFB59A",
           "primary-content": "#5B1B00",
           secondary: "#FFB950",
+          "secondary-content": "#452B00",
         },
       },
     ],
