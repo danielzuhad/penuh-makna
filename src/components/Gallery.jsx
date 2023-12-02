@@ -37,7 +37,7 @@ const Gallery = ({ theme }) => {
               theme={theme}
               key={index}
               src={image}
-              className="w-[200px] md:w-[15em] md:h-[15em]  border-primary card card-bordered shadow-md "
+              className="w-[200px] md:w-[15em] md:h-[15em]  "
             />
           ))}
         </div>

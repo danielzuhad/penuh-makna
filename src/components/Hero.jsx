@@ -34,7 +34,7 @@ const Hero = ({ theme }) => {
         {/* Image */}
         <div className="w-full  flex justify-center relative items-center lg:justify-end sm:max-lg:mt-16">
           <SquareProp variant="right" theme={theme} />
-          <ImageComp src={coffeeHome} />
+          <ImageComp theme={theme} src={coffeeHome} />
         </div>
       </section>
     </>

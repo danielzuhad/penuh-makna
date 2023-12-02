@@ -1,10 +1,11 @@
 import React from "react";
 
-import coffeeAbout from "../../public/images/coffee-about.png";
-import ImageComp from "./Image";
 import SquareProp from "./SquareProp";
+import ImageComp from "./Image";
+import Coffee from "../../public/images/three-coffee.jpg";
+import Button from "./Button";
 
-const About = ({ theme }) => {
+const ThreeCofee = ({ theme }) => {
   return (
     <>
       <section
@@ -22,24 +23,20 @@ const About = ({ theme }) => {
             <h1
               className={`font-bold text-[32px] sm:max-lg:text-[3em] lg:text-[3em] text-center lg:text-start `}
             >
-              About us
+              Temukan postingan dan info terbaru lewat Instagram Penuh Makna
             </h1>
 
-            <div>
-              <p className="max-lg:leading-[28.26px] min-lg:leading-[48.26px] text-[1em] sm:text-[1.2em] 2xl:text-[1.5em] max-lg:text-center">
-                Selamat datang di Penuh Makna, tempat di mana setiap teguk kopi
-                adalah perjalanan pribadi Anda. Kami mengundang Anda untuk
-                menikmati kopi dengan kebebasan tanpa batas, menciptakan
-                pengalaman unik yang sesuai dengan selera Anda. Penuh Makna,
-                tempat di mana kopi bertemu dengan kreativitas Anda.
-              </p>
+            <div className="w-full flex justify-center">
+              <Button variant="secondary" theme={theme}>
+                Mulai Pesan
+              </Button>
             </div>
           </div>
 
           {/* Image */}
           <div className="w-full relative flex justify-center lg:justify-start">
-            <SquareProp theme={theme} variant="left" />
-            <ImageComp theme={theme} src={coffeeAbout} />
+            <SquareProp theme={theme} variant="left" className="lg:top-[4em]" />
+            <ImageComp theme={theme} src={Coffee} />
           </div>
         </div>
       </section>
@@ -47,4 +44,4 @@ const About = ({ theme }) => {
   );
 };
 
-export default About;
+export default ThreeCofee;
