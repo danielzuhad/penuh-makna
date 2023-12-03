@@ -5,7 +5,6 @@ import Link from "next/link";
 import socmedOne from "../../public/images/socmedOne.png";
 import socmedTwo from "../../public/images/socmedTwo.png";
 import socmedThree from "../../public/images/socmedThree.png";
-import socmedFour from "../../public/images/socmedFour.png";
 
 const Footer = ({ theme }) => {
   const socmeds = [

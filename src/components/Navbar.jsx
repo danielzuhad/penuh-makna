@@ -25,7 +25,7 @@ const Navbar = ({ theme, setTheme }) => {
   return (
     <>
       <div
-        className={`w-screen h-[90.05px] fixed backdrop-blur-sm  z-20 flex justify-center ${
+        className={`w-screen  h-[90.05px] fixed backdrop-blur-sm  z-20 flex justify-center ${
           theme === "light" ? "bg-[#FFFBFF/30]" : "bg-[#201A18]/30"
         }`}
       >
@@ -119,14 +119,16 @@ const Navbar = ({ theme, setTheme }) => {
         {/* Hamburger navbar */}
         <>
           <div
-            className={`border-b-2 border-black lg:hidden absolute w-screen h-[80vh sm:w-[40vw] sm:h-screen sm:right-0 sm:border-l-2 duration-300 transition-all ${
+            className={`border-b-2 py-5 pt-8 border-black lg:hidden absolute w-screen h-[80vh sm:w-[40vw] sm:h-screen sm:right-0 sm:border-l-2 duration-300 transition-all ${
               burgerActive ? "top-0" : "top-[-100em]"
             }
              ${theme === "light" ? `bg-[#FFFBFF]` : `bg-[#201A18]`}`}
           >
             <button
               onClick={() => setBurgerActive(!burgerActive)}
-              className="w-full h-[15%] flex items-center text-3xl justify-end pr-5 sm:pr-10"
+              className={`w-full h-[15%] flex items-center text-3xl justify-end pr-5 sm:pr-10 ${
+                theme === "light" ? "text-[#201A18]" : "text-[#EDE0DC]"
+              }`}
             >
               <IoMdClose />
             </button>
