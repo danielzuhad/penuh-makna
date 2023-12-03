@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import SquareProp from "./SquareProp";
 import ImageComp from "./Image";
@@ -27,9 +28,11 @@ const ThreeCofee = ({ theme }) => {
             </h1>
 
             <div className="w-full flex justify-center">
-              <Button variant="secondary" theme={theme}>
-                Mulai Pesan
-              </Button>
+              <Link href="https://www.instagram.com/kopipenuhmakna/">
+                <Button variant="secondary" theme={theme}>
+                  Mulai Pesan
+                </Button>
+              </Link>
             </div>
           </div>
 

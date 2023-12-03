@@ -88,8 +88,8 @@ const Navbar = ({ theme, setTheme }) => {
                 <Link
                   className="w-max"
                   to={nav.href}
-                  spy={true}
-                  smooth={true}
+                  spy="true"
+                  smooth="true"
                   key={index}
                   href={nav.href}
                 >
@@ -141,8 +141,8 @@ const Navbar = ({ theme, setTheme }) => {
                   <Link
                     onClick={() => setBurgerActive(!burgerActive)}
                     to={nav.href}
-                    spy={true}
-                    smooth={true}
+                    spy="true"
+                    smooth="true"
                     offset={0}
                     duration={500}
                     key={index}
