@@ -8,6 +8,7 @@ const About = ({ theme }) => {
   return (
     <>
       <section
+        id="About"
         className={`${
           theme === "light" ? "bg-[#F8EBE7]" : "bg-[#3B3331]"
         } w-screen lg:h-[90vh] flex justify-center pb-[5em] lg:py-[5em]  `}

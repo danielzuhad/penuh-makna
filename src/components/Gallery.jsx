@@ -20,7 +20,10 @@ const Gallery = ({ theme }) => {
 
   return (
     <>
-      <section className="w-[90vw] sm:w-[80vw] flex flex-col justify-center items-center gap-[40px] py-[3em] pb-[5em] lg:mt-[5em]">
+      <section
+        id="Gallery"
+        className="w-[90vw] sm:w-[80vw] flex flex-col justify-center items-center gap-[40px] py-[3em] pb-[5em] lg:mt-[5em] "
+      >
         {/* Quote */}
         <h1
           className={`font-bold text-[32px] sm:max-lg:text-[3em] lg:text-[3em] text-center   ${
